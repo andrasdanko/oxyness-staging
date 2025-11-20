@@ -1,0 +1,30 @@
+# robots.txt for Oxyness
+# https://oxyness.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://oxyness.com/sitemap.xml
+
+# Crawl delay (polite crawling)
+Crawl-delay: 1
+
+# Block private/admin areas (if any exist in the future)
+Disallow: /admin/
+Disallow: /api/
+
+# Block tracking parameters
+Disallow: /*?*utm_source=
+Disallow: /*?*utm_medium=
+Disallow: /*?*utm_campaign=
+
+# Allow common bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

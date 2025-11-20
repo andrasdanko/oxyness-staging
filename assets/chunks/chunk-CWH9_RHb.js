@@ -1,0 +1,1 @@
+function p(r,n,o){const g=o.toUpperCase(),t=r.find(e=>e.locale===g);if(t&&t[n])return String(t[n]);const c=r.find(e=>e.locale==="EN");return c&&c[n]?String(c[n]):r.length>0&&r[0][n]?String(r[0][n]):""}export{p as g};

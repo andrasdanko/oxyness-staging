@@ -14,6 +14,14 @@ Crawl-delay: 1
 Disallow: /admin/
 Disallow: /api/
 
+# Block test pages (all locales)
+Disallow: /test/
+Disallow: /hu/test/
+Disallow: /de/test/
+Disallow: /fr/test/
+Disallow: /es/test/
+Disallow: /it/test/
+
 # Block tracking parameters
 Disallow: /*?*utm_source=
 Disallow: /*?*utm_medium=

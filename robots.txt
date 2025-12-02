@@ -1,38 +1,49 @@
 # robots.txt for Oxyness
 # https://oxyness.com/robots.txt
 
+# ============================================
+# DEVELOPMENT MODE - Block all crawlers
+# Remove this section and uncomment below for production
+# ============================================
 User-agent: *
-Allow: /
+Disallow: /
 
-# Sitemap
-Sitemap: https://oxyness.com/sitemap.xml
+# ============================================
+# PRODUCTION CONFIG (uncomment when ready)
+# ============================================
 
-# Crawl delay (polite crawling)
-Crawl-delay: 1
+# User-agent: *
+# Allow: /
 
-# Block private/admin areas (if any exist in the future)
-Disallow: /admin/
-Disallow: /api/
+# # Sitemap
+# Sitemap: https://oxyness.com/sitemap.xml
 
-# Block test pages (all locales)
-Disallow: /test/
-Disallow: /hu/test/
-Disallow: /de/test/
-Disallow: /fr/test/
-Disallow: /es/test/
-Disallow: /it/test/
+# # Crawl delay (polite crawling)
+# Crawl-delay: 1
 
-# Block tracking parameters
-Disallow: /*?*utm_source=
-Disallow: /*?*utm_medium=
-Disallow: /*?*utm_campaign=
+# # Block private/admin areas (if any exist in the future)
+# Disallow: /admin/
+# Disallow: /api/
 
-# Allow common bots
-User-agent: Googlebot
-Allow: /
+# # Block test pages (all locales)
+# Disallow: /test/
+# Disallow: /hu/test/
+# Disallow: /de/test/
+# Disallow: /fr/test/
+# Disallow: /es/test/
+# Disallow: /it/test/
 
-User-agent: Bingbot
-Allow: /
+# # Block tracking parameters
+# Disallow: /*?*utm_source=
+# Disallow: /*?*utm_medium=
+# Disallow: /*?*utm_campaign=
 
-User-agent: Slurp
-Allow: /
+# # Allow common bots
+# User-agent: Googlebot
+# Allow: /
+
+# User-agent: Bingbot
+# Allow: /
+
+# User-agent: Slurp
+# Allow: /

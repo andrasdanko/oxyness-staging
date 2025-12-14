@@ -1,1 +1,0 @@
-import{r as a}from"./chunk-BGmof1nQ.js";function o(t,r=!1){const[c,n]=a.useState(r);return a.useEffect(()=>{const e=window.matchMedia(t);n(e.matches);const s=i=>n(i.matches);return e.addEventListener("change",s),()=>e.removeEventListener("change",s)},[t]),c}function h(){return!o("(min-width: 768px)")}export{h as u};
